@@ -1,28 +1,4 @@
 {
-  "name": "Azure Data Environment (Augmented Professional Series)",
-  // Użycie stabilnego obrazu uniwersalnego Microsoftu
-  "image": "://mcr.microsoft.com",
-  
-  "features": {
-    // Dodanie specyficznych narzędzi wymaganych w kursie (z Modułów 1-6)
-    "ghcr.io/devcontainers/features/git-lfs:1": {}, // Duże pliki danych Azure
-    "ghcr.io/devcontainers/features/python:1": {},  // Python, Pandas, LangChain, SHAP
-    "ghcr.io/devcontainers/features/node:1": {},    // k6.io do testów obciążeniowych
-    "ghcr.io/devcontainers/features/go:1": {},      // Moduł 6 (FinOps API)
-    "ghcr.io/devcontainers/features/powershell:1": {} // Przydatne dla użytkowników Windowsa
-  },
-  
-  "customizations": {
-    "vscode": {
-      // Instalacja rozszerzeń VS Code, które przydadzą się kursantom
-      "extensions": [
-        "ms-azuretools.vscode-docker",
-        "HashiCorp.terraform",
-        "mechatroner.rainbow-csv"
-      ]
-    }
-  },
-  
-  // Domyślny użytkownik "codespace" ma pełne uprawnienia w /workspaces
-  "remoteUser": "codespace" 
+    "name": "Universal",
+    "image": "://mcr.microsoft.com"
 }
